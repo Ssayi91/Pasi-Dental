@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pasi Dental Care Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us | Pasi Dental Care</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
 <body>
     <nav class="navbar">
-        <a href="#" class="logo">Pasi Dental Care</a>
+        <a href="index.html" class="logo">Pasi Dental Care</a>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
@@ -20,3 +19,199 @@
         </div>
         <i class="fas fa-bars mobile-menu"></i>
     </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="hero-content">
+            <h1>We're Here For You</h1>
+            <p>Contact our friendly team to schedule your appointment or ask any questions</p>
+        </div>
+    </section>
+
+    <!-- Contact Main Section -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="section-heading">
+                        <h2>Get In Touch</h2>
+                        <p class="tagline">Multiple ways to reach our dental office</p>
+                    </div>
+
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Our Location</h3>
+                            <p>123 Wellness Avenue<br>RUAI BYPASS, KE 56789</p>
+                            <a href="#" class="map-link">View on Google Maps →</a>
+                        </div>
+
+                        <div class="info-card">
+                            <i class="fas fa-phone-alt"></i>
+                            <h3>Phone Numbers</h3>
+                            <p>Appointments: (254) 123-4567<br>
+                            Emergency: (254) 987-6543</p>
+                        </div>
+
+                        <div class="info-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email Us</h3>
+                            <p>General Inquiries: info@pasidental.com<br>
+                            Appointments: booking@pasidental.com</p>
+                        </div>
+
+                        <div class="info-card">
+                            <i class="fas fa-clock"></i>
+                            <h3>Working Hours</h3>
+                            <p>Monday-Friday: 8:00 AM - 7:00 PM<br>
+                            Saturday: 9:00 AM - 3:00 PM<br>
+                            Sunday: Emergency Only</p>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h3>Follow Us On Social Media</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <div class="section-heading">
+                        <h2>Send Us a Message</h2>
+                        <p class="tagline">We typically respond within 24 hours</p>
+                    </div>
+
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name*</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="general">General Dentistry</option>
+                                <option value="cosmetic">Cosmetic Dentistry</option>
+                                <option value="implants">Dental Implants</option>
+                                <option value="ortho">Orthodontics</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message*</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Map Section -->
+    <section class="office-map">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Find Our Office</h2>
+                <p class="tagline">Conveniently located with ample parking available</p>
+            </div>
+
+            <div class="map-container">
+                <!-- Embedded Google Map -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.854454764728!2d36.123456789012345!3d-1.2345678901234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTQnMDQuNSJTIDM2wrAwNyczNC4xIkU!5e0!3m2!1sen!2ske!4v1234567890123!5m2!1sen!2ske" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                
+                <div class="parking-info">
+                    <i class="fas fa-parking"></i>
+                    <p>Free patient parking available in front and behind the building</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact Section -->
+    <section class="emergency-contact">
+        <div class="container">
+            <div class="emergency-content">
+                <div class="emergency-text">
+                    <h3>Dental Emergency?</h3>
+                    <p>We provide immediate care for dental emergencies during and after office hours. Call our emergency line for prompt assistance.</p>
+                    <div class="emergency-phone">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>(254) 987-6543</span>
+                    </div>
+                </div>
+                <div class="emergency-image">
+                    <img src="assets/emergency-dentist.jpg" alt="Emergency dentist">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Pasi Dental Care</h4>
+                    <p>123 Wellness Avenue<br>
+                    RUAI BYPASS, KE 56789<br>
+                    Phone: (254) 123-4567<br>
+                    Email: care@pasidental.com</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Dental Tips</a></li>
+                        <li><a href="contact.html">Emergency Care</a></li>
+                        <li><a href="contact.html">Insurance Info</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="opening-hours">
+                        <h4>Opening Hours</h4>
+                        <p>Mon-Fri: 8am - 7pm<br>
+                        Sat: 9am - 3pm<br>
+                        Sun: Emergency Only</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Pasi Dental Care. All rights reserved. <span>|</span> <a href="#">Privacy Policy</a> <span>|</span> <a href="#">Terms of Service</a></p> <br>
+                <p>Designed by <a href="https://ssayi91.github.io/Portfolio-V2/"> <span>S.S Solutions</span></a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
