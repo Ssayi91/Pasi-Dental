@@ -66,6 +66,13 @@ body {
     position: relative;
 }
 
+.nav-links a.active {
+    color: #00ffaa;
+    font-weight: 700;
+    border-bottom: 2px solid #00ffaa;
+    font-size: 20px;
+}
+
 .nav-links a:hover {
     color: var(--primary-color);
 }
@@ -472,6 +479,16 @@ footer {
     padding: 2rem 5%;
     margin-top: 5rem;
 }
+.copyright span{
+    color: #00cc6a;
+    font-weight: 600;
+}
+.copyright span:hover{
+    color: #ffffff;
+    font-size: 24px;
+    transition: ease-in-out 2s;
+    transform: translateY(-10px);
+}
 
 @media (max-width: 768px) {
     .nav-links {
@@ -539,5 +556,224 @@ footer {
     
     .section-heading h2 {
         font-size: 1.8rem;
+    }
+}
+
+/* service section */
+/* Services Page Specific Styles */
+.services-hero {
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/service\ banner.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+}
+
+.services-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    background: none;
+    -webkit-text-fill-color: white;
+}
+
+.services-main {
+    padding: 6rem 5%;
+    background-color: #f9f9f9;
+}
+
+.services-categories {
+    margin-top: 3rem;
+}
+
+.service-category {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+.category-header {
+    background: var(--primary-color);
+    color: white;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.category-header i {
+    font-size: 2rem;
+}
+
+.service-items {
+    padding: 2rem;
+}
+
+.service-item {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.service-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.service-item h4 {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.service-gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.service-gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* Office Tour Section */
+.office-tour {
+    padding: 6rem 5%;
+    background: white;
+}
+
+.office-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.office-gallery .gallery-item {
+    text-align: center;
+}
+
+.office-gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Smile Gallery Section */
+.smile-gallery {
+    padding: 6rem 5%;
+    background: #f9f9f9;
+}
+
+.transformation-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.transformation-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.before-after {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.before-after img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Technology Section */
+.technology {
+    padding: 6rem 5%;
+    background: white;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.tech-item {
+    text-align: center;
+}
+
+.tech-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Service CTA */
+.service-cta {
+    padding: 4rem 5%;
+    background: linear-gradient(45deg, var(--primary-color), #00cc6a);
+    color: white;
+    text-align: center;
+}
+
+.service-cta h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-cta .cta-btn {
+    background: white;
+    color: var(--secondary-color);
+    margin-top: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .services-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .before-after {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .category-header {
+        flex-direction: column;
+        text-align: center;
     }
 }
