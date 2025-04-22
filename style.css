@@ -493,6 +493,7 @@ footer {
 @media (max-width: 768px) {
     .nav-links {
         display: none;
+        flex-direction: column;
     }
     
     .hero h1 {
@@ -504,6 +505,11 @@ footer {
         font-size: 1.5rem;
         color: var(--secondary-color);
         cursor: pointer;
+    }
+    .logo {
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 18px;
     }
 }
 /* Responsive Adjustments */
