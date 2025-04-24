@@ -791,7 +791,7 @@ footer {
 /* Contact Page Specific Styles */
 .contact-hero {
     height: 50vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/contact-hero.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/contat\ banner\ 1.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -800,6 +800,7 @@ footer {
     text-align: center;
     color: white;
     margin-top: 80px;
+    height: 500px;
 }
 
 .contact-hero h1 {
@@ -984,7 +985,7 @@ footer {
 /* Blog Page Specific Styles */
 .blog-hero {
     height: 50vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/blog-hero.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.664)), url('./assets/dental\ blog.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
