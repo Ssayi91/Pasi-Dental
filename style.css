@@ -230,8 +230,7 @@ body {
 
 .about-image img {
     width: 100%;
-    height: auto;
-    border-radius: 15px;
+    /* height: auto; */
 }
 
 .commitment h3 {
