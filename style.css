@@ -149,10 +149,13 @@ body {
     font-size: 1.1rem;
     cursor: pointer;
     transition: transform 0.3s;
+    text-decoration: none;
 }
 
 .cta-btn:hover {
     transform: translateY(-3px);
+    background: #00cc6a;
+    transition: ease-in-out 2s;
 }
 
 /* Add these new styles after your .hero styles */
@@ -750,7 +753,7 @@ footer {
 /* Service CTA */
 .service-cta {
     padding: 4rem 5%;
-    background: linear-gradient(45deg, var(--primary-color), #00cc6a);
+    background: linear-gradient(15deg, var(--primary-color), #011f10);
     color: white;
     text-align: center;
 }
