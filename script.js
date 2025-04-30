@@ -50,14 +50,14 @@ function sendWhatsAppMessage(event) {
     const service = document.getElementById('service').options[document.getElementById('service').selectedIndex].text;
     const message = document.getElementById('message').value;
 
-    // Format WhatsApp message
+    // Format WhatsApp message using \n for new lines
     const whatsappMessage = 
-        `New Consultation Request:%0A%0A
-        *Name:* ${name}%0A
-        *Email:* ${email}%0A
-        *Phone:* ${phone || 'Not provided'}%0A
-        *Service Interested In:* ${service || 'Not specified'}%0A%0A
-        *Message:*%0A${message}`;
+        `New Consultation Request:\n\n` +
+        `*Name:* ${name}\n` +
+        `*Email:* ${email}\n` +
+        `*Phone:* ${phone || 'Not provided'}\n` +
+        `*Service Interested In:* ${service || 'Not specified'}\n\n` +
+        `*Message:*\n${message}`;
 
     // Encode message for URL
     const encodedMessage = encodeURIComponent(whatsappMessage);
