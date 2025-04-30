@@ -2,15 +2,17 @@ backend:
   name: github
   repo: ssayi91/Pasi-Dental
   branch: main
-  auth_scope: repo
-  site_domain: ssayi91.github.io
+
+site_url: https://pasidentalcare.coke
+display_url: https://pasidentalcare.coke
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
   - name: "blog"
-    label: "Blog"   folder: "blog"
+    label: "Blog"
+    folder: "blog"
     create: true
     slug: "{{slug}}"
     fields:
