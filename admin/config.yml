@@ -3,8 +3,8 @@ backend:
   repo: ssayi91/Pasi-Dental
   branch: main
 
-site_url: https://pasidentalcare.coke
-display_url: https://pasidentalcare.coke
+site_url: https://pasidentalcare.co.ke
+display_url: https://pasidentalcare.co.ke
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
