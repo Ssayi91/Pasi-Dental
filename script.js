@@ -71,3 +71,36 @@ function sendWhatsAppMessage(event) {
     // Open in new window
     window.open(whatsappUrl, '_blank');
 }
+
+
+// Function to render blog posts
+function renderBlogPosts(posts) {
+    const blogContainer = document.getElementById('blog-posts');
+    posts.forEach(post => {
+        const article = document.createElement('article');
+        article.classList.add('blog-card');
+        if (post.featured) {
+            article.classList.add('featured');
+        }
+
+        article.innerHTML = `
+            <div class="card-image">
+                <img src="${post.image}" alt="${post.title}">
+                <div class="category-label">${post.category}</div>
+            </div>
+            <div class="card-content">
+                <div class="meta-info">
+                    <span class="date"><i class="far fa-calendar"></i> ${post.date}</span>
+                    <span class="author"><i class="far fa-user"></i> ${post.author}</span>
+                </div>
+                <h3>${post.title}</h3>
+                <p>${post.summary}</p>
+                <a href="${post.link}" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        `;
+        blogContainer.appendChild(article);
+    });
+}
+
+// Render blog posts on page load
+renderBlogPosts(blogPosts);

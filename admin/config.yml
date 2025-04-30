@@ -2,20 +2,21 @@ backend:
   name: github
   repo: ssayi91/Pasi-Dental
   branch: main
+  auth_scope: repo
+  site_domain: ssayi91.github.io
 
-media_folder: "images/uploads"  # Where uploaded images are stored in your repo
-public_folder: "/images/uploads"  # Public URL path to access images
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
 
 collections:
   - name: "blog"
-    label: "Blog Posts"
-    folder: "blog"
+    label: "Blog"   folder: "blog"
     create: true
     slug: "{{slug}}"
-    extension: "md"
-    format: "frontmatter"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "image", widget: "image"}
-      - {label: "Blog Content", name: "body", widget: "markdown"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Category", name: "category", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}

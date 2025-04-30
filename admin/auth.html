@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GitHub Auth</title>
+    <script>
+      // Replace these with your GitHub OAuth App credentials
+      const CLIENT_ID = "Ov23liGeVz9RtX8XmBn2";
+      const REDIRECT_URI = "https://ssayi91.github.io/admin/";
+      
+      // Step 1: Redirect to GitHub for authentication
+      if (!window.location.search.includes("code=")) {
+        const githubAuthUrl = `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=repo`;
+        window.location = githubAuthUrl;
+      } else {
+        // Step 2: Extract code and return to Decap CMS
+        const code = new URLSearchParams(window.location.search).get("code");
+        window.opener.postMessage({ type: "authorization_code", code }, window.location.origin);
+        window.close();
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Authenticating with GitHub...</h2>
+  </body>
+</html>
