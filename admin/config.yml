@@ -3,17 +3,19 @@ backend:
   repo: ssayi91/Pasi-Dental
   branch: main
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "images/uploads"  # Where uploaded images are stored in your repo
+public_folder: "/images/uploads"  # Public URL path to access images
 
 collections:
   - name: "blog"
-    label: "Blog"
+    label: "Blog Posts"
     folder: "blog"
     create: true
     slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Blog Content", name: "body", widget: "markdown"}
