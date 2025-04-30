@@ -2,6 +2,10 @@ backend:
   name: github
   repo: ssayi91/Pasi-Dental
   branch: main
+  auth_type: implicit
+  site_domain: pasidentalcare.co.ke
+  app_id: Ov23liGeVz9RtX8XmBn2
+  auth_endpoint: https://pasidentalcare.co.ke/api/auth
 
 site_url: https://pasidentalcare.co.ke
 display_url: https://pasidentalcare.co.ke
@@ -14,11 +18,19 @@ collections:
     label: "Blog"
     folder: "blog"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"  # Critical fix for Jekyll
+    editor:
+      preview: false
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Category", name: "category", widget: "string"}
-      - {label: "Author", name: "author", widget: "string"}
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Category", name: "category", widget: "string", default: "General" }
+      - { label: "Author", name: "author", widget: "string", default: "Admin" }
+      - { label: "Featured Image", name: "image", widget: "image", allow_multiple: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+# Jekyll _config.yml
+collections:
+  blog:
+    output: true
+    permalink: /blog/:title/
