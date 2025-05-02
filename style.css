@@ -1,6 +1,6 @@
 /* style.css */
 :root {
-    --primary-color: #00ff88;
+    --primary-color: #0a462a;
     --secondary-color: #1a1a1a;
     --accent-white: #ffffff;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -67,14 +67,14 @@ body {
 }
 
 .nav-links a.active {
-    color: #00ffaa;
+    color: #031f16fd;
     font-weight: 700;
-    border-bottom: 2px solid #00ffaa;
+    border-bottom: 2px solid #0f553e;
     font-size: 20px;
 }
 
 .nav-links a:hover {
-    color: var(--primary-color);
+    color: #0d1d15;
 }
 
 /* Mobile Menu */
@@ -123,12 +123,11 @@ body {
 
 .hero h1 {
     font-size: 4rem;
-    color: var(--secondary-color);
+    color: var(--accent-white);
     margin-bottom: 2rem;
     line-height: 1.2;
-    background: linear-gradient(45deg, #00ff88, #00cc6a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }
 
 /* Add other section styles from previous answer */
@@ -141,7 +140,7 @@ body {
 }
 
 .cta-btn {
-    background: var(--secondary-color);
+    background: var(--primary-color);
     color: var(--accent-white);
     padding: 1rem 2rem;
     border: none;
@@ -154,7 +153,7 @@ body {
 
 .cta-btn:hover {
     transform: translateY(-3px);
-    background: #00cc6a;
+    background: #031a0f;
     transition: ease-in-out 2s;
 }
 
