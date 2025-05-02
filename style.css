@@ -117,6 +117,7 @@ body {
     z-index: 3;
     color: white; /* Light text color for better contrast */
     max-width: 800px; /* Optional: limits content width */
+    text-align: center;
 }
 
 
